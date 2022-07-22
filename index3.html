@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootcamp2020 class12</title>
+    <style>
+        body{
+            background-image: url('images/bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <img src="images/cloud1.gif" id="cloud"/>
+    <img src="images/cloud2.gif" id="cloud2"/>
+    <img src="images/cloud1.gif" id="cloud3"/>
+    <script>
+        var elem = document.querySelector('#cloud');
+        elem.animate([
+            {transform : 'translate(0, 0)'}, 
+            {transform : 'translate(1000px, 0px)'}, 
+            {transform : 'translate(0, 0px)'}, 
+        ],{
+            duration: 7000,
+            iterations: Infinity
+        })
+        var elem = document.querySelector('#cloud2');
+        elem.animate([
+            {transform : 'translate(1000px, 0px)'}, 
+            {transform : 'translate(0, 0)'}, 
+            {transform : 'translate(1000px, 0px)'}, 
+        ],{
+            duration: 7000,
+            iterations: Infinity
+        })
+    </script>
+</body>
+</html>

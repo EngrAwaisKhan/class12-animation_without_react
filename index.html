@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootcamp2020 Class12</title>
+    <style>
+        #box{
+            height: 100px;
+            width: 100px;
+            background: #2bc2d9;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <!-- <h3>Hello World!</h3> -->
+    </div>
+
+    <script>
+        var elem = document.querySelector('#box');
+        elem.animate([
+            {transform: 'translate(0, 0)', background: 'yellow'},
+            {transform: 'translate(700px,0)', background: '#ffeffe'},
+            {transform: 'translate(500px, 500px)', background: '#bbccbb'},
+            {transform: 'translate(0px, 500px)', background: '#ccffcc'},
+            {transform: 'translate(0, 0)', background:'pink'}
+        ],{ duration: 6500,
+            iterations: Infinity
+            })
+    </script>
+</body>
+</html>
